@@ -1,6 +1,6 @@
 <?php
 Kirki::add_section( 'page_settings', array(
-    'title'          => esc_html__( 'Kaku pages', 'kaku' ),
+    'title'          => esc_html__( 'Kaku Pages', 'kaku' ),
     'panel'          => 'kaku_panel',
     'priority'       => 12,
 ) );
