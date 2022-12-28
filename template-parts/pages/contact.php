@@ -63,6 +63,7 @@ $kaku_contact_page_repeater = get_theme_mod('contact_repeater_setting');
           ?>
             <!-- single contact info start -->
             <div class="col-md-4 col-sm-6">
+              <?php if(!empty($kaku_contact_info_icon || $kaku_contact_info_title || $kaku_contact_info_value)){?>
               <div class="single-contact-info phone">
                 <?php
                 if ($kaku_contact_info_icon) { ?>
@@ -77,8 +78,9 @@ $kaku_contact_page_repeater = get_theme_mod('contact_repeater_setting');
                   <p><?php echo esc_html($kaku_contact_info_value); ?></p>
                 <?php }
                 ?>
-
               </div>
+              <?php }
+              ?>
             </div>
             <!-- single contact info start -->
           <?php } ?>
