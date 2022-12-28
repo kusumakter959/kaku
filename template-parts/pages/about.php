@@ -141,6 +141,9 @@ if ('1' == $kaku_about_page_team_sectin_display) {
 
               <!-- single team member start -->
               <div class="col-lg-4 col-md-6 col-sm-6">
+                <?php 
+                  if($kaku_team_member_name || $kaku_team_member_designation ||$kaku_team_member_facebook || $kaku_team_member_twitter || $kaku_team_member_linkedin || $kaku_team_member_instagram){
+                ?>
                 <div class="single-team-member">
                   <?php
                   if ($kaku_team_member_img) { ?>
@@ -199,6 +202,7 @@ if ('1' == $kaku_about_page_team_sectin_display) {
                     </div>
                   </div>
                 </div>
+                <?php }?>
               </div>
               <!-- single team member end -->
           <?php }
