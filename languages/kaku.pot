@@ -295,11 +295,11 @@ msgstr ""
 
 #: customizer/kaku-customizer-settings/c-testimonial.php:3
 #: customizer/kaku-customizer-settings/page-customizer/about/c-about-page-testimonial-section.php:4
-msgid "Testimonial section"
+msgid "Testimonial Section"
 msgstr ""
 
 #: customizer/kaku-customizer-settings/c-testimonial.php:13
-msgid "Display testimonial section?"
+msgid "Display testimonial Section?"
 msgstr ""
 
 #: customizer/kaku-customizer-settings/c-testimonial.php:26
@@ -398,7 +398,7 @@ msgid "Contact Us"
 msgstr ""
 
 #: customizer/kaku-customizer-settings/page-customizer/about/c-about-page-team-section.php:4
-msgid "Team section"
+msgid "Team Section"
 msgstr ""
 
 #: customizer/kaku-customizer-settings/page-customizer/about/c-about-page-team-section.php:28

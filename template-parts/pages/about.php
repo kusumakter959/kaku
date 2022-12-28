@@ -61,11 +61,13 @@ if ($kaku_about_page_about_sectin_display) {
             if ($kaku_about_page_lists_repeater) { ?>
               <ul>
                 <?php
-                foreach ($kaku_about_page_lists_repeater as $kaku_about_page_list) { ?>
+                foreach ($kaku_about_page_lists_repeater as $kaku_about_page_list) { 
+                  if($kaku_about_page_list['lists_content']){?>
                   <li>
                     <i class="fas fa-angle-right"></i><?php echo esc_html($kaku_about_page_list['lists_content']); ?>
                   </li>
-                <?php } ?>
+                <?php } 
+                }?>
               </ul>
             <?php }
 
@@ -145,8 +147,7 @@ if ('1' == $kaku_about_page_team_sectin_display) {
                     <div class="team-member-img">
                       <img src="<?php echo esc_url($kaku_team_member_img); ?>" alt="<?php esc_attr_e('Team member Image', 'kaku'); ?>" />
                     </div>
-                  <?php }
-                  ?>
+                  <?php } ?> 
                   <div class="team-member-info">
                     <div class="team-member-meta">
                       <?php

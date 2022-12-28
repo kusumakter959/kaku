@@ -1,6 +1,6 @@
 <?php
 Kirki::add_section( 'testimonial_settings', array(
-    'title'          => esc_html__( 'Testimonial section', 'kaku' ),
+    'title'          => esc_html__( 'Testimonial Section', 'kaku' ),
     'panel'          => 'kaku_panel',
     'priority'       => 160,
     'section' 		 => 'homepage_settings'
@@ -10,7 +10,7 @@ Kirki::add_section( 'testimonial_settings', array(
 Kirki::add_field( 'kaku_options', [
 	'type'     => 'checkbox',
 	'settings' => 'testimonial_display',
-	'label'    => esc_html__( 'Display testimonial section?', 'kaku' ),
+	'label'    => esc_html__( 'Display Testimonial Section?', 'kaku' ),
 	'section'  => 'testimonial_settings',
 	'priority' => 10,
 	'default'     => true,
@@ -84,19 +84,19 @@ Kirki::add_field( 'kaku_options', [
 	'fields' => [
 		'reviewer_image' => [
 			'type'        => 'image',
-			'label'       => esc_html__( 'Reviewer image', 'kaku' ),
+			'label'       => esc_html__( 'Reviewer Image', 'kaku' ),
 		],
 		'reviewer_name' => [
 			'type'        => 'text',
-			'label'       => esc_html__( 'Reviewer name', 'kaku' ),
+			'label'       => esc_html__( 'Reviewer Name', 'kaku' ),
 		],
 		'reviewer_designation'  => [
 			'type'        => 'text',
-			'label'       => esc_html__( 'Reviewer designation', 'kaku' )
+			'label'       => esc_html__( 'Reviewer Designation', 'kaku' )
 		],
 		'reviewer_content'  => [
 			'type'        => 'textarea',
-			'label'       => esc_html__( 'Review content', 'kaku' )
+			'label'       => esc_html__( 'Review Content', 'kaku' )
 		],
 	],
 	'active_callback'  => [

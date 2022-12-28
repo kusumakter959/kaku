@@ -1,7 +1,7 @@
 <?php
 
 Kirki::add_section('about_page_testimonial', array(
-	'title'          => esc_html__('Testimonial section', 'kaku'),
+	'title'          => esc_html__('Testimonial Section', 'kaku'),
 	'panel'          => 'kaku_panel',
 	'priority'       => 190,
 	'section' 		 => 'about_page_settings'

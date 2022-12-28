@@ -1,7 +1,7 @@
 <?php
 
 Kirki::add_section('about_page_team', array(
-	'title'          => esc_html__('Team section', 'kaku'),
+	'title'          => esc_html__('Team Section', 'kaku'),
 	'panel'          => 'kaku_panel',
 	'priority'       => 190,
 	'section' 		 => 'about_page_settings'
@@ -72,7 +72,7 @@ Kirki::add_field('kaku_options', [
 //About repeater box
 Kirki::add_field('kaku_options', [
 	'type'        => 'repeater',
-	'label'       => esc_html__('Team member repeater', 'kaku'),
+	'label'       => esc_html__('Team Member Repeater', 'kaku'),
 	'section'     => 'about_page_team',
 	'priority'    => 10,
 	'settings'     => 'team_member_repeater',
