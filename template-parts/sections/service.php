@@ -40,6 +40,13 @@
               foreach ($kaku_service_repeaters as $kaku_service_repeater) {
             ?>
                 <!-- single service strat-->
+                <?php 
+                  $kaku_service_icon = $kaku_service_repeater['service_icon'];
+                  $kaku_service_title = $kaku_service_repeater['service_title'];
+                  $kaku_service_description = $kaku_service_repeater['service_description'];
+                
+                if(!empty($kaku_service_icon || $kaku_service_title || $kaku_service_description)){
+                ?>
                 <div class="col-lg-4 col-md-6">
                   <div class="single-service">
                     <?php
@@ -64,6 +71,7 @@
                     ?>
                   </div>
                 </div>
+                <?php }?>
                 <!-- single service end-->
             <?php }
             } ?>

@@ -1,19 +1,20 @@
 <?php
-Kirki::add_section( 'testimonial_settings', array(
+
+Kirki::add_section( 'testimonial_settings', [
     'title'          => esc_html__( 'Testimonial Section', 'kaku' ),
     'panel'          => 'kaku_panel',
     'priority'       => 160,
     'section' 		 => 'homepage_settings'
-) );
+] );
 
 //About section display
 Kirki::add_field( 'kaku_options', [
-	'type'     => 'checkbox',
-	'settings' => 'testimonial_display',
-	'label'    => esc_html__( 'Display Testimonial Section?', 'kaku' ),
-	'section'  => 'testimonial_settings',
-	'priority' => 10,
-	'default'     => true,
+	'type'       => 'checkbox',
+	'settings'   => 'testimonial_display',
+	'label'      => esc_html__( 'Display Testimonial Section?', 'kaku' ),
+	'section'    => 'testimonial_settings',
+	'priority'   => 10,
+	'default'    => true,
 ] );
 
 //Service heading
@@ -30,7 +31,17 @@ Kirki::add_field( 'kaku_options', [
 			'operator' => '===',
 			'value'    => true,
 		]
-	]
+		
+	],
+	'transport'  => 'postMessage',
+	'partial_refresh'    => [
+		'testimonial_settings' => [
+			'selector'        => '.testimonial-heading h2',
+			'render_callback' => function() {
+				return get_theme_mod('testimonial_display');
+			},
+		]
+	],
 ] );
 
 //Service sub heading
