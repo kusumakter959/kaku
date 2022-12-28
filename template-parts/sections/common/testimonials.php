@@ -44,27 +44,31 @@ $kaku_testimonial_repeaters = get_theme_mod('testimonial_repeater');
               $reviewer_content = $kaku_testimonial_repeater['reviewer_content'];
             ?>
               <!-- single testimonials strat -->
-              <div class="single-testimonial">
-                <?php
-                if ($reviewer_image) { ?>
-                  <div class="testimonial-img">
-                    <img src="<?php echo esc_url($reviewer_image); ?>" alt="<?php _e('Testimonial Image', 'kaku'); ?>" />
-                  </div>
-                <?php }
+              <?php 
+                if(!empty($reviewer_imag || $reviewer_name || $reviewer_designation || $reviewer_content)){
+              ?>
+                <div class="single-testimonial">
+                  <?php
+                  if (!empty($reviewer_image)) { ?>
+                    <div class="testimonial-img">
+                      <img src="<?php echo esc_url($reviewer_image); ?>" alt="<?php _e('Testimonial Image', 'kaku'); ?>" />
+                    </div>
+                  <?php }
 
-                if ($reviewer_content) { ?>
-                  <p><?php echo esc_html($reviewer_content); ?></p>
-                <?php }
+                  if ($reviewer_content) { ?>
+                    <p><?php echo esc_html($reviewer_content); ?></p>
+                  <?php }
 
-                if ($reviewer_name) { ?>
-                  <h3><?php echo esc_html($reviewer_name); ?></h3>
-                <?php }
+                  if ($reviewer_name) { ?>
+                    <h3><?php echo esc_html($reviewer_name); ?></h3>
+                  <?php }
 
-                if ($reviewer_designation) { ?>
-                  <h4><?php echo esc_html($reviewer_designation); ?></h4>
-                <?php }
-                ?>
-              </div>
+                  if ($reviewer_designation) { ?>
+                    <h4><?php echo esc_html($reviewer_designation); ?></h4>
+                  <?php }
+                  ?>
+                </div>
+              <?php } ?>
               <!-- single testimonials end -->
             <?php } ?>
           </div>
